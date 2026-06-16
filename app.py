@@ -2,8 +2,8 @@ from flask import Flask, render_template, request, redirect, url_for
 import stripe
 
 app = Flask(__name__)
-public_key = "pk_test_TYooMQauvdEDq54NiTphI7jx"
-stripe.api_key = "sk_test_4eC39HqLyjWDarjtT1zdp7dc"
+public_key = ""
+stripe.api_key = ""
 @app.route('/')
 def index():
     return render_template('index.html', public_key=public_key)
